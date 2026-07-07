@@ -57,3 +57,70 @@ section {
 ul {
     list-style-type: square;
 }
+
+#photo-documentation {
+    padding: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.photo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.photo-row {
+    display: flex;
+    align-items: center;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    gap: 25px;
+}
+
+.photo-day {
+    font-weight: bold;
+    color: #2980b9;
+    min-width: 60px;
+}
+
+.photo-placeholder {
+    width: 160px;
+    height: 100px;
+    background-color: #bdc3c7;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.doc-image {
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.photo-desc {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .photo-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .photo-placeholder, .doc-image {
+        width: 100%;
+        height: 180px;
+    }
+}
