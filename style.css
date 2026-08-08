@@ -136,7 +136,7 @@ ul {
 #ojt-documents a,
 #weekly-reports a {
     color: var(--primary-color);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 600;
     transition: var(--hover-transition);
 }
